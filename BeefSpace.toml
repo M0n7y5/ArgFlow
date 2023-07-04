@@ -1,0 +1,11 @@
+FileVersion = 1
+Projects = {ArgFlow = {Path = "ArgFlow"}, "ArgFlow.Test" = {Path = "ArgFlow.Test"}}
+
+[Workspace]
+StartupProject = "ArgFlow.Test"
+
+[Configs.Test.Win32]
+ConfigSelections = {corlib = {Config = "Debug"}}
+
+[Configs.Test.Win64]
+ConfigSelections = {corlib = {Config = "Debug"}}
