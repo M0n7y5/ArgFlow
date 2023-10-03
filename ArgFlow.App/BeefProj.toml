@@ -1,0 +1,17 @@
+FileVersion = 1
+Dependencies = {corlib = "*", ArgFlow = "*"}
+
+[Project]
+Name = "ArgFlow.App"
+StartupObject = "ArgFlow.App.Program"
+
+[Configs.Release.Win64]
+OptimizationLevel = "O2"
+LTOType = "Thin"
+VectorizeLoops = true
+VectorizeSLP = true
+
+[[Configs.Release.Win64.DistinctOptions]]
+Filter = ""
+BfSIMDSetting = "AVX2"
+BfOptimizationLevel = "O2"
